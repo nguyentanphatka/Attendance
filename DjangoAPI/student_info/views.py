@@ -34,6 +34,9 @@ def student_show(request):
 
 class FaceImagesView(APIView):
     parser_classes = (MultiPartParser, FormParser)
+    @classmethod
+    def get_extra_actions(cls):
+        return []
 
 
 def get(self, request):
