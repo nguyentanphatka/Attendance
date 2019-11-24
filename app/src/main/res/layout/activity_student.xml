@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentActivity">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        <!-- Capture picture button -->
+        <Button
+            android:id="@+id/btnSelect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/btn_select"
+            android:textColor="@android:color/white" />
+
+        <!-- Record video button -->
+        <Button
+            android:id="@+id/btnRecordVideo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/btn_record_video"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo"
+        android:contentDescription="@string/todo" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:background="#11000000"
+        android:drawableStart="@drawable/ic_action_user"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:textSize="18dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="30dp"
+        android:background="#11000000"
+        android:drawableStart="@drawable/ic_action_pass"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:autofillHints="" />
+
+    <Button
+        android:id = "@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/editText2"
+
+        android:background="@color/colorAccent"
+        android:textColor="#fff"
+        android:textSize="18sp"
+
+        android:text = "@string/login"/>
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardView"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_below="@id/editText2"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        app:cardBackgroundColor="@color/colorAccent"-->
+<!--        app:cardCornerRadius="25dp"-->
+<!--        app:cardElevation="10dp">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerInParent="true"-->
+<!--                android:text="@string/login"-->
+<!--                android:textColor="#fff"-->
+<!--                android:textSize="18sp" />-->
+
+<!--        </RelativeLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="36dp"
+        android:text="@string/register_here" />
+
+
+</RelativeLayout>
